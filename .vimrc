@@ -14,3 +14,10 @@ let mapleader = " "
 syntax on
 set autoindent
 set cindent
+
+inoremap { {}<Left>
+inoremap {<CR> {<CR>}<Esc>O
+inoremap ( ()<Left>
+inoremap <expr> ) strpart(getline('.'), col('.') - 1, 1) == ")" ? "\<Right>" : ")"
+
+
