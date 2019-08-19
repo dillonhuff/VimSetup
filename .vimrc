@@ -20,4 +20,18 @@ inoremap {<CR> {<CR>}<Esc>O
 inoremap ( ()<Left>
 inoremap <expr> ) strpart(getline('.'), col('.') - 1, 1) == ")" ? "\<Right>" : ")"
 
+filetype plugin indent on
+set tabstop=2
+set shiftwidth=2
+set expandtab
+
+
+
+
+
+
+
+
+
+
 
