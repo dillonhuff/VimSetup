@@ -13,6 +13,8 @@ inoremap jk <ESC>
 let mapleader = " "
 syntax on
 set autoindent
+
+
 set cindent
 
 inoremap { {}<Left>
@@ -25,8 +27,16 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 
+set number
 
+set showcmd
 
+set cursorline
+set incsearch
+set hlsearch
+
+set ignorecase
+set smartcase
 
 
 
