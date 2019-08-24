@@ -19,8 +19,18 @@ set cindent
 
 inoremap { {}<Left>
 inoremap {<CR> {<CR>}<Esc>O
+inoremap <expr> } strpart(getline('.'), col('.') - 1, 1) == "}" ? "\<Right>" : "}"
+
 inoremap ( ()<Left>
 inoremap <expr> ) strpart(getline('.'), col('.') - 1, 1) == ")" ? "\<Right>" : ")"
+
+inoremap [ []<Left>
+inoremap <expr> ] strpart(getline('.'), col('.') - 1, 1) == "]" ? "\<Right>" : "]"
+
+inoremap ' ''<Left>
+inoremap <expr> ' strpart(getline('.'), col('.') - 1, 1) == "'" ? "\<Right>" : "'"
+
+map a <S-a>
 
 filetype plugin indent on
 set tabstop=2
@@ -38,6 +48,7 @@ set hlsearch
 set ignorecase
 set smartcase
 
+colorscheme desert
 
 
 
