@@ -6,6 +6,8 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'itchyny/vim-haskell-indent'
+
 call vundle#end()
 filetype plugin indent on
 
@@ -31,6 +33,7 @@ inoremap ' ''<Left>
 inoremap <expr> ' strpart(getline('.'), col('.') - 1, 1) == "'" ? "\<Right>" : "'"
 
 map a <S-a>
+map s <C-w><C-w>
 
 filetype plugin indent on
 set tabstop=2
