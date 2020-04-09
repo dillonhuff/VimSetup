@@ -1,14 +1,17 @@
 set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
+
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'itchyny/vim-haskell-indent'
+Plugin 'kien/ctrlp.vim'
 
 call vundle#end()
+
 filetype plugin indent on
 
 inoremap jk <ESC> 
@@ -52,7 +55,7 @@ set ignorecase
 set smartcase
 
 colorscheme desert
-
+set clipboard=unnamedplus
 
 
 
