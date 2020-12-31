@@ -55,7 +55,7 @@ set ignorecase
 set smartcase
 
 colorscheme desert
-set clipboard=unnamedplus
+"set clipboard=unnamedplus
 
 
 
