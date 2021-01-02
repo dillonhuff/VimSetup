@@ -57,7 +57,7 @@ set smartcase
 colorscheme desert
 "set clipboard=unnamedplus
 
-
+set backspace=indent,eol,start
 
 
 
